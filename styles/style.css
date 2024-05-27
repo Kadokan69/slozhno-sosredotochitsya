@@ -2,4 +2,97 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  
+  background-color: var(--background-color);
+}
+
+.header {
+  background-image: url(/images/cover-image-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  position: relative;
+}
+
+.header__theme-menu {
+  display: grid;
+  justify-items: end;
+  margin: 65px 0;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  border: none;
+  text-transform: lowercase;
+  padding: 1px 12px;
+  font-size: 18px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 97px;
+}
+
+.header__decription {
+  margin: 55px 0 57px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.title-decor {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
+.header__decorated-text_theme-dark {
+  position: absolute;
+  inset-inline-end: 38px;
+  font-size: 19px;
+  color: var(--accent-color);
+
+}
+
+.header__decorated-text_theme-dark::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50px;
+  display: block;
+  position: absolute;
+  inset-inline-end: -18px;
+  inset-block-start: 8px;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.decorated-zone::before, .decorated-zone::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: absolute;
+}
+
+.decorated-zone::before {
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  inset-inline-end: 10px;
+}
+
+.decorated-zone::after {
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  inset-block-end: 10px;
 }
