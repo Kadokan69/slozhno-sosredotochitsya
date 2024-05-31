@@ -1,7 +1,6 @@
 {
   "name": "slozhno-sosredotochitsya",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo 'Привет!'",
@@ -16,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "prettier": "^3.2.5",
-    "stylelint": "^16.6.0"
-  }
+    "stylelint": "^16.6.1"
+  },
+  "description": ""
 }
