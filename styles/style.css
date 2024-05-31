@@ -15,6 +15,7 @@
 .footer {
   display: grid;
   block-size: 100vh;
+  grid-template-rows: 1fr -webkit-min-content 1fr;
   grid-template-rows: 1fr min-content 1fr;
   justify-content: center;
   padding: 10px;
@@ -62,6 +63,7 @@
 }
 
 .text-decor {
+  -webkit-margin-before: 10px;
   margin-block-start: 10px;
   color: var(--main-text-color);
 }
@@ -104,21 +106,27 @@
 }
 
 .decorated-zone::before {
+  -webkit-border-before: 1px solid var(--decorated-zone-color);
   border-block-start: 1px solid var(--decorated-zone-color);
+  -webkit-border-end: 1px solid var(--decorated-zone-color);
   border-inline-end: 1px solid var(--decorated-zone-color);
   inset-inline-end: 10px;
   inset-block-start: 10px;
 }
 
 .decorated-zone::after {
+  -webkit-border-after: 1px solid var(--decorated-zone-color);
   border-block-end: 1px solid var(--decorated-zone-color);
+  -webkit-border-start: 1px solid var(--decorated-zone-color);
   border-inline-start: 1px solid var(--decorated-zone-color);
   inset-block-end: 10px;
   inset-inline-start: 10px;
 }
 
 .main {
+  -webkit-margin-before: 40px;
   margin-block-start: 40px;
+  -webkit-margin-after: 40px;
   margin-block-end: 40px;
   padding: 0 10px;
 }
@@ -128,6 +136,7 @@
 .section__text-three {
   display: grid;
   gap: 20px;
+  -webkit-margin-after: 50px;
   margin-block-end: 50px;
 }
 
@@ -158,6 +167,7 @@
 .section__images-item {
   inline-size: 100%;
   block-size: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -190,7 +200,6 @@
 }
 
 @media (min-width: 700px) {
-
   .header,
   .footer {
     padding: 20px;
@@ -211,7 +220,7 @@
     inset-inline-end: 15px;
     inset-block-start: 20px;
   }
-  
+
   .decorated-zone::after {
     inset-block-end: 20px;
     inset-inline-start: 25px;
@@ -223,7 +232,9 @@
   }
 
   .main {
+    -webkit-margin-before: 60px;
     margin-block-start: 60px;
+    -webkit-margin-after: 60px;
     margin-block-end: 60px;
     padding: 0 20px;
   }
@@ -231,6 +242,7 @@
   .section__text-first,
   .section__text-two,
   .section__text-three {
+    -webkit-margin-after: 80px;
     margin-block-end: 80px;
   }
 
@@ -244,6 +256,8 @@
   }
 
   .section__text-two .section__text-title {
+    inline-size: -webkit-min-content;
+    inline-size: -moz-min-content;
     inline-size: min-content;
   }
 
@@ -303,19 +317,20 @@
   .header__decription {
     inline-size: 50%;
     justify-self: end;
+    -webkit-margin-after: 58px;
     margin-block-end: 58px;
   }
 
   .header__decorated-text_theme-dark {
     inset-inline-end: 48px;
     inset-block-start: 21px;
- }
+  }
 
   .decorated-zone::before {
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
-  
+
   .decorated-zone::after {
     inset-block-end: 20px;
     inset-inline-start: 20px;
@@ -336,8 +351,7 @@
     inline-size: 100%;
   }
   .title {
-    --accent-color: #FF0070;
+    --accent-color: #ff0070;
     text-shadow: 4px 4px 0 var(--accent-color);
-
   }
 }

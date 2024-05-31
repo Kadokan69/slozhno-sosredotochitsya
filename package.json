@@ -14,8 +14,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.4.19",
     "prettier": "^3.2.5",
     "stylelint": "^16.6.1"
   },
-  "description": ""
+  "description": "",
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
