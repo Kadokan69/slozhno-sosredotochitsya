@@ -20,9 +20,8 @@
   },
   "description": "",
   "browserslist": [
-    "last 2 versions",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
+    "last 4 versions", 
+    "ie >= 9", 
+    "> 5%"
   ]
 }

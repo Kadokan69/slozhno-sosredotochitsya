@@ -15,7 +15,6 @@
 .footer {
   display: grid;
   block-size: 100vh;
-  grid-template-rows: 1fr -webkit-min-content 1fr;
   grid-template-rows: 1fr min-content 1fr;
   justify-content: center;
   padding: 10px;
@@ -256,8 +255,6 @@
   }
 
   .section__text-two .section__text-title {
-    inline-size: -webkit-min-content;
-    inline-size: -moz-min-content;
     inline-size: min-content;
   }
 
