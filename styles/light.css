@@ -5,7 +5,7 @@
     --background-color: #fff1f7;
     --title-color: #ffc2e6;
     --main-text-color: #353430;
-    --page-background-image: url(/images/cover-image-light.png);
+    --page-background-image: url(../images/cover-image-light.png);
     --display-decorated-text: none;
     --decorated-zone-color: #353430;
     --title-decor-color: #353430;
@@ -24,7 +24,7 @@
   --background-color: #fff1f7;
   --title-color: #ffc2e6;
   --main-text-color: #353430;
-  --page-background-image: url(/images/cover-image-light.png);
+  --page-background-image: url(../images/cover-image-light.png);
   --display-decorated-text: none;
   --decorated-zone-color: #353430;
   --title-decor-color: #353430;
